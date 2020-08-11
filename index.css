@@ -1,0 +1,139 @@
+body{
+    background-color: black;
+}
+
+.container{
+    padding: 10px;
+    margin: 2px 50px 0px 50px;
+}
+.canvasCls{
+    margin-left: 90px;
+    display: inline-block;
+}
+.playInfo{
+    background: url(./snake.jpg) no-repeat;
+    float: left;
+    color: #00ff00;
+    border: 1px solid whitesmoke;
+    width: 285px;
+    height: 505px;
+    position: relative;
+}
+.extraInfo{
+    position: absolute;
+    color: #00ff00;
+    font-size: 20px;
+    margin: 10px;
+    padding: 5px;
+    display: block;
+    bottom:5px;
+    line-height: 25px;
+    font-family: monospace;
+    text-align: center;
+}
+.logo{
+    text-shadow: 1px 1px #ff0000;
+    padding: 0px;
+    margin:0px 20px 5px 55px;
+    color: #00ff00;
+    font-size: 50px;
+    font-weight: 600;
+}
+.subHeading{
+    padding: 5px;
+    margin:10px;
+    font-size: 25px;
+    display: block;
+    font-weight: bolder;
+}
+
+.subHeadpart{
+    padding: 5px;
+    margin:10px;
+    font-size: 18px;
+    display: block;
+    font-family: monospace;
+    font-weight: bolder;
+}
+ul li{
+    padding: 5px;
+    margin:10px;
+    font-size: 20px;
+}
+ul li span{
+    font-family: monospace;
+    font-size: 19px;
+    font-weight: bolder;
+}
+ul li:hover{
+    font-weight: bold;
+}
+
+.facts{
+    background:url("./snake.jpg") no-repeat;
+    float: right;
+    color: #00ff00;
+    border: 1px solid whitesmoke;
+    width: 250px;
+    height: 505px;
+    position: relative;
+}
+.factsPoint{
+  margin:15px;
+  font-size: 22px;
+  line-height: 25px; 
+}
+
+.factsSrc{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 8px;
+}
+body{
+    background: #0A0A0A;
+}
+
+.text-area {
+    font-size: 30px;
+    transform: translate(-50%,-50%);
+    font-family: 'Concert One', cursive;
+    animation-name: animate;
+    animation-duration: 10s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    text-transform:uppercase;
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+}
+@keyframes animate {
+    0%,100%{ text-shadow:0 0 30px red; }
+    25%{ text-shadow:0 0 30px orange; }
+    50%{ text-shadow:0 0 30px forestgreen; }
+    75%{ text-shadow:0 0 30px cyan; }
+ }
+
+
+ @media screen and (max-width: 1350px) {
+    .playInfo .canvasCls .facts{
+        display: block;
+    }
+    .playInfo{
+        margin: 0 auto;
+        margin-bottom: 50px;
+        float: none;
+    }
+    .canvasCls{
+        margin: 0 auto;
+    float: none;
+    width: 500px;
+    display: block;
+    }
+    .facts{
+        margin: 0 auto;
+        float: none;
+        margin-top:50px;
+    }
+  }
