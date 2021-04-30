@@ -5,9 +5,10 @@ body{
 .container{
     padding: 10px;
     margin: 2px 50px 0px 50px;
+    display: flex;
+    justify-content: space-between;
 }
 .canvasCls{
-    margin-left: 90px;
     display: inline-block;
 }
 .playInfo{
